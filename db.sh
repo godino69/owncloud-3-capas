@@ -18,4 +18,5 @@ GRANT ALL PRIVILEGES ON owncloud.* TO 'owncloud'@'%';
 FLUSH PRIVILEGES;
 EOF
 
+# Quitar ip por defecto para no tener acceso a internet
 ip route del default
