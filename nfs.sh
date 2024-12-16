@@ -42,8 +42,8 @@ cat <<EOF > /var/www/html/owncloud/config/autoconfig.php
 );
 EOF
 
+# Cambiar color de fondo owncloud
 sed -i 's/background-color: .*/background-color: #a8d08d;/'  /var/www/html/owncloud/core/css/styles.css
-
 
 
 # Configuración de PHP-FPM para escuchar en la IP del servidor NFS
@@ -52,4 +52,5 @@ sed -i 's/^listen = .*/listen = 192.168.56.13:9000/' /etc/php/7.4/fpm/pool.d/www
 # Reiniciar PHP-FPM
 systemctl restart php7.4-fpm
 
+# Quitar ip por defecto para no tener acceso a internet
 ip route del default
