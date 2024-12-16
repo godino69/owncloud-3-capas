@@ -245,3 +245,4 @@ Usuario: admin
 Contraseña: 1234
 
 Problemas: No he conseguido que se pueda acceder con localhost:8080, he probado muchas cosas pero nada. Tienes que hacer un ssh en el balanceador, ahí un ip a para ver su ip pública y esa ip ponerla en el buscador.
+SSH: vagrant ssh balanceadorGodino
