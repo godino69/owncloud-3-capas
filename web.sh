@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Actualizar repositorios e instalar nginx, nfs-common y PHP 7.4
+# Actualizar repositorios e instalar nginx, mariadb-client, nfs-common y PHP 7.4
 apt-get update -y
 apt-get install -y nginx nfs-common php7.4 php7.4-fpm php7.4-mysql php7.4-gd php7.4-xml php7.4-mbstring php7.4-curl php7.4-zip php7.4-intl php7.4-ldap mariadb-client
 
@@ -47,4 +47,5 @@ systemctl restart nginx
 # Reiniciar PHP-FPM 7.4
 systemctl restart php7.4-fpm
 
+# Quitar ip por defecto para no tener acceso a internet
 ip route del default
